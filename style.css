@@ -1,0 +1,215 @@
+body {
+text-align: center;
+background-color: #051116;
+font-family: 'Gudea', sans-serif;
+}
+
+.my_navbar {
+font-family: 'Gudea', sans-serif;
+background-color: #051116;
+margin-left: -8px;
+position: fixed;
+top: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 80px;
+border-width: 0.5px;
+border-style: solid;
+border-bottom-color:#58CAFA;
+}
+
+ul{
+list-style: none;
+}
+.logo{
+width: 150px;
+}
+
+h1{
+margin-top: 100px;
+text-align: center;
+font-family: 'Gudea', sans-serif;
+}
+
+.color_white{
+color: white;
+}
+
+.banner{
+height: 80vh;
+width: 100%;
+background-image: url("http://opticsgamer.com/wp-content/uploads/2015/03/google-glass.jpg");
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.Ou {
+background-color: rgba(108, 97, 97,0.3);
+border-color: rgb(31, 14, 14);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+box-shadow: black;
+padding-bottom: 10mm;
+}
+
+.contact {
+padding-top: 25mm;
+align-items: unset;
+text-align: unset;
+text-align: center;
+color: white;
+}
+    
+.map {
+justify-content: space-evenly;
+display: flex;
+align-self: baseline ;
+margin-left: 0;
+}
+
+.Google_form{
+text-align: center;
+color: #58CAFA;
+}
+
+.my_button button {
+    color: white;
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+  }
+.my_button button .text {
+    font-family: 'Gudea', sans-serif;
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+.my_button button:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: calc(0.7em * 1.2);
+    right: calc(0.7em * 1.2);
+    height: 3px;
+    background:deepskyblue;
+    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+    transform-origin: left;
+  }
+.my_button .line {
+    position: absolute;
+    background: deepskyblue;
+  }
+.my_button .line.-right, .my_button .line.-left {
+    width: 3px;
+    bottom: -3px;
+    top: -3px;
+    transform: scale3d(1, 0, 1);
+  }
+.my_button .line.-top, .my_button .line.-bottom {
+    height: 3px;
+    left: -3px;
+    right: -3px;
+    transform: scale3d(0, 1, 1);
+  }
+.my_button .line.-right {
+    right: -3px;
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+    transform-origin: top;
+  }
+.my_button .line.-top {
+    top: -3px;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+.my_button .line.-left {
+    left: -3px;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+.my_button .line.-bottom {
+    bottom: -3px;
+    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+    transform-origin: right;
+  }
+.my_button button:hover .text,
+  .my_button button:active .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+.my_button button:hover:after,
+  .my_button button:active:after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  }
+.my_button button:hover .line,
+  .my_button button:active .line {
+    transform: scale3d(1, 1, 1);
+  }
+.my_button button:hover .line.-right,
+  .my_button button:active .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+  }
+.my_button button:hover .line.-top,
+  .my_button button:active .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+  }
+.my_button button:hover .line.-left,
+  .my_button button:active .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+  }
+.my_button button:hover .line.-bottom,
+  .my_button button:active .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
+  }
+
+  .modal-content{
+    background-color: dimgray;
+  }
+
+  .footer {
+    background: #051116;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+    color: white;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: white;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+  .footer-copyrigh{
+  padding-top: 40mm;
+  }
